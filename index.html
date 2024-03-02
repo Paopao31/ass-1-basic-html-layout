@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #4a90e2; /* Blue */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #d91e18; /* Red */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        .left-side {
+            padding: 100px;
+            margin: 10px;
+            height: 400px;
+            background-color: #f39c12; /* Orange */
+        }
+        .right-side {
+            padding: 100px;
+            margin: 10px;
+            height: 400px;
+            background-color: #27ae60; /* Green */
+        }
+        .main-content {
+            padding: 20px;
+            margin: 10px;
+            height: 550px;
+            background-color: #9b59b6; /* Purple */
+            flex-basis: calc(50% - 40px);
+            text-align: center;
+        }
+        footer {
+            padding: 20px;
+            margin: 10px;
+            background-color: #34495e; /* Dark Blue */
+            color: #fff;
+            text-align: center;
+            clear: both;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <h1>Navigation Menu</h1>
+        </nav>
+        <div class="container">
+            <div class="left-side">
+                <h2> Left Side Content</h2>
+            </div>
+            <div class="main-content">
+                <h2>Main Content</h2>
+            </div>
+            <div class="right-side">
+                <h2> Right Side Content</h2>
+            </div>
+        </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </body>
+    </html>
